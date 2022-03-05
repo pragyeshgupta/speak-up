@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.speakup"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:4:5-66
+14-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:3:5-70
+15-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:3:22-68
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:5:5-68
+16-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:5:22-65
+17
+18    <queries>
+18-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:6:5-10:15
+19        <intent>
+19-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:7:9-9:18
+20            <action android:name="android.speech.RecognitionService" />
+20-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:8:13-72
+20-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:8:21-69
+21        </intent>
+22    </queries>
+23
+24    <application
+24-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:11:4-48:19
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.1.0] /Users/optimus/.gradle/caches/transforms-2/files-2.1/2e94107f30f39be366a17347c2bf100b/core-1.1.0/AndroidManifest.xml:24:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+27-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:13:9-43
+28        android:label="speakup" >
+28-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:12:9-32
+29        <activity
+29-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:14:9-42:20
+30            android:name="com.example.speakup.MainActivity"
+30-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:15:13-41
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:18:13-163
+32            android:hardwareAccelerated="true"
+32-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:19:13-47
+33            android:launchMode="singleTop"
+33-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:16:13-43
+34            android:theme="@style/LaunchTheme"
+34-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:17:13-47
+35            android:windowSoftInputMode="adjustResize" >
+35-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:20:13-55
+36
+37            <!--
+38                 Specifies an Android theme to apply to this Activity as soon as
+39                 the Android process has started. This theme is visible to the user
+40                 while the Flutter UI initializes. After that, this theme continues
+41                 to determine the Window background behind the Flutter UI.
+42            -->
+43            <meta-data
+43-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:25:13-28:17
+44                android:name="io.flutter.embedding.android.NormalTheme"
+44-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:26:15-70
+45                android:resource="@style/NormalTheme" />
+45-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:27:15-52
+46            <!--
+47                 Displays an Android View that continues showing the launch screen
+48                 Drawable until Flutter paints its first frame, then this splash
+49                 screen fades out. A splash screen is useful to avoid any visual
+50                 gap between the end of Android's launch screen and the painting of
+51                 Flutter's first frame.
+52            -->
+53            <meta-data
+53-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:34:13-37:17
+54                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+54-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:35:15-79
+55                android:resource="@drawable/launch_background" />
+55-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:36:15-61
+56
+57            <intent-filter>
+57-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:38:13-41:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:39:17-68
+58-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:39:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:40:17-76
+60-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:40:27-74
+61            </intent-filter>
+62        </activity>
+63        <!--
+64             Don't delete the meta-data below.
+65             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+66        -->
+67        <meta-data
+67-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:45:9-47:33
+68            android:name="flutterEmbedding"
+68-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:46:13-44
+69            android:value="2" />
+69-->/Users/optimus/StudioProjects/speakup/android/app/src/main/AndroidManifest.xml:47:13-30
+70    </application>
+71
+72</manifest>
